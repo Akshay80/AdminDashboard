@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Sidebar from "./Components/SideBar/Sidebar";
+import TopBar from "./Components/TopBar/TopBar";
+import "./App.css";
+import Home from "./Pages/Home/Home";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom'
+import UserList from "./Pages/UserList/UserList";
+import User from "./Pages/User/User";
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <TopBar />
+      <div className="container">
+          <Sidebar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/users">
+            <UserList />
+          </Route>
+          <Route exact path="/user/:userId">
+            <User />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

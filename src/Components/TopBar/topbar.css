@@ -1,0 +1,33 @@
+.topbarWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.topbarRight {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.topbarIconContainer {
+  cursor: pointer;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.topbarIconContainer .menus {
+  margin-left: 15px;
+}
+
+.user{
+    width: 56px!important;
+    height: 56px!important;
+}
