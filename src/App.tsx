@@ -10,26 +10,38 @@ import {
 } from 'react-router-dom'
 import UserList from "./Pages/UserList/UserList";
 import User from "./Pages/User/User";
+import Analytics from "./Pages/Analytics/Analytics";
 
 function App(): JSX.Element {
   return (
+    <div className="container">
+         <div className="row">
     <Router>
       <TopBar />
-      <div className="container">
-          <Sidebar />
+        <div className="col-3">
+        <Sidebar />
+        </div>
+       
         <Switch>
+        <div className="col-9">  
           <Route exact path="/">
             <Home />
           </Route>
           <Route exact path="/users">
             <UserList />
           </Route>
+          <Route exact path="/dashboard/analytics">
+            <Analytics />
+          </Route>
           <Route exact path="/user/:userId">
             <User />
           </Route>
+        </div>
         </Switch>
-      </div>
+   
     </Router>
+    </div>
+    </div>
   );
 }
 

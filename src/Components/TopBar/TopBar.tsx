@@ -4,13 +4,15 @@ import logo from "../../images/logo_transparent.png";
 import user from "../../images/user.jpg"
 import { Badge, Avatar } from "@mui/material";
 import { NotificationsNone, Settings, Language } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 export default function TopBar() {
   return (
-    <div>
+    <div className="container"> 
       <div className="topbarWrapper">
         <div className="topLeft">
-          <img src={logo} alt="logo" width="120" height="120" />
+          <Link to="/">
+          <img src={logo} alt="logo" width="120" height="120" /></Link>
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">

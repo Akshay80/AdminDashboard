@@ -1,5 +1,6 @@
 import React from "react";
 import "./sidebar.css";
+import { Link } from 'react-router-dom'
 import { LineStyle, TrendingUp, Timeline, PersonOutline, MailOutline, Report, Storefront, AttachMoney, DynamicFeed, BarChart, ChatBubbleOutline, WorkOutline} from "@mui/icons-material";
 
 export default function Sidebar() {
@@ -10,12 +11,16 @@ export default function Sidebar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem active">
+              <Link to="/">
               <LineStyle className="sidebarIcon"/>
               Home
+              </Link>
             </li>
             <li className="sidebarListItem">
+              <Link to="/dashboard/analytics">
               <Timeline className="sidebarIcon" />
               Analytics
+              </Link>
             </li>
             <li className="sidebarListItem">
               <TrendingUp className="sidebarIcon"/>

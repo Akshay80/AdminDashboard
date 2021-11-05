@@ -1,0 +1,26 @@
+.container-wrapper {
+    flex: 4;
+}
+.analytics-db {
+    display: flex;
+    background: rgb(247, 249, 252);
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.analytics-db .analytics-db-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.analytics-db .analytics-db-heading p{
+    text-align: start !important;
+}
+
+.analytcis-cards {
+    display: flex;
+    flex: 2;
+    margin: 5px;
+    justify-content: space-around;
+}
