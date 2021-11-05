@@ -1,9 +1,10 @@
 .sidebar{
     flex: 1;
-    height: calc(100vh - 50px);
+    /* height: calc(100vh - 50px); */
     background-color: #fbfbff;
     position: sticky;
-    top:50px;
+    top: 50px!important;
+    height:100%;
 }
 
 .sidebarWrapper{

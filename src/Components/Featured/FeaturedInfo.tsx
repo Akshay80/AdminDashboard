@@ -1,6 +1,7 @@
 import React from 'react'
 import './feature.css';
 import { ArrowUpward, ArrowDownward } from "@mui/icons-material";
+import CountUp from 'react-countup';
 
 export default function FeaturedInfo() {
     return (
@@ -10,8 +11,10 @@ export default function FeaturedInfo() {
                 Revenue
             </span>
             <div className="featuredMoneyContainer">
-                <span className="featuredMoney">$30,172</span>
-                <span className="featuredMoneyRate">-11.4%
+                <span className="featuredMoney">$<CountUp duration={20} start={0} separator=","
+  decimal="," end={30172}/></span>
+                <span className="featuredMoneyRate">-<CountUp duration={10} start={20}
+  decimal="." decimals={1} end={11.4}/>%
                 <ArrowDownward className="featuredIcon negative"/>
                 </span>
             </div>
@@ -26,8 +29,11 @@ export default function FeaturedInfo() {
                 Sales
             </span>
             <div className="featuredMoneyContainer">
-                <span className="featuredMoney">$32,725</span>
-                <span className="featuredMoneyRate">+50.3%
+                <span className="featuredMoney">$<CountUp duration={20} start={0} separator=","
+  decimal="," end={32725}/></span>
+                <span className="featuredMoneyRate">+
+                <CountUp duration={20} start={10.1}
+  decimal="." decimals={1} end={50.3}/>%
                 <ArrowUpward className="featuredIcon"/>
                 </span>
             </div>
@@ -42,8 +48,12 @@ export default function FeaturedInfo() {
                 Cost
             </span>
             <div className="featuredMoneyContainer">
-                <span className="featuredMoney">$33,034</span>
-                <span className="featuredMoneyRate">+12.87%
+                <span className="featuredMoney">$
+                <CountUp duration={20} start={0} separator=","
+  decimal="," end={33034}/></span>
+                <span className="featuredMoneyRate">+
+                <CountUp duration={20} start={0}
+  decimal="." decimals={2} end={12.87}/>%
                 <ArrowUpward className="featuredIcon"/>
                 </span>
             </div>
