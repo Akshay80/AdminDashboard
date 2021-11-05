@@ -22,7 +22,7 @@ export default function WidgetSmall(): JSX.Element {
           
           <div className="WidgetSmUser">
             <span className=" WidgetSmUsername">Akshay Bisht </span>
-            <span className="WidgetSmUserTitle">Software Engineer </span>
+            <span className="WidgetSmUserTitle">Sr. Software Engineer </span>
             <div className="status"><p>Status: <span className="online" /></p></div>
             
           </div>

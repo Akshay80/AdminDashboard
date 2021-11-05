@@ -12,15 +12,18 @@ export default function TopBar() {
       <div className="topbarWrapper">
         <div className="topLeft">
           <Link to="/">
-          <img src={logo} alt="logo" width="120" height="120" /></Link>
+          <img src={logo} alt="logo" width="120" height="120" style={{objectFit:"cover"}}/></Link>
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
+          <div id="google_translate_element"> </div>
             <Badge className="menus" badgeContent={2} color="error">
               <NotificationsNone color="action" />
             </Badge>
             <Badge className="menus" badgeContent={2} color="error">
+           
               <Language color="action" />
+             
             </Badge>
             <Settings className="menus" color="action" />
             <Avatar

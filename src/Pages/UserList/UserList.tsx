@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./userlist.css";
 import { DataGrid, GridValueGetterParams } from "@mui/x-data-grid";
 import { Delete, Edit } from "@mui/icons-material";
+import { Tooltip } from "@mui/material";
 import { UserRows } from "./dummyData";
 import { Link } from "react-router-dom";
 
@@ -34,10 +35,14 @@ export default function UserList(): JSX.Element {
         return (
           <>
             <div className="UserListBtn">
+            <Tooltip title="Edit" placement="left">
               <Link to={"/user/" + params.row.id}>
                 <Edit className="editIcon" color="action" />
               </Link>
+            </Tooltip>
+              <Tooltip title="Delete" placement="right">
               <Delete className="deleteIcon" color="error" onClick={() => {handleDelete(params.row.id)}}/>
+              </Tooltip>
             </div>
           </>
         );
