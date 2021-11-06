@@ -13,7 +13,7 @@ export default function FeaturedInfo() {
             <div className="featuredMoneyContainer">
                 <span className="featuredMoney">$<CountUp duration={20} start={0} separator=","
   decimal="," end={30172}/></span>
-                <span className="featuredMoneyRate">-<CountUp duration={10} start={20}
+                <span className="featuredMoneyRate">-<CountUp duration={20} start={50}
   decimal="." decimals={1} end={11.4}/>%
                 <ArrowDownward className="featuredIcon negative"/>
                 </span>

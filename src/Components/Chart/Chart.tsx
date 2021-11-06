@@ -22,7 +22,7 @@ export default function Chart(): JSX.Element {
     <div className="chart">
       <h3 className="chartTitle">Sales Analytics</h3>
       <ResponsiveContainer className="chartContainer" aspect={4 / 1}>
-        <LineChart data={data} >
+        <LineChart data={data}>
           <CartesianGrid strokeDasharray="5 5" />
           <XAxis dataKey="name"  />
           <YAxis />
@@ -33,9 +33,9 @@ export default function Chart(): JSX.Element {
             dataKey="pv"
             stroke="#8884d8"
             activeDot={{ r: 8 }}
-            animationDuration={10000}
+            animationDuration={23000}
           />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" animationDuration={10000} />
+          <Line type="monotone" dataKey="uv" stroke="#82ca9d" animationDuration={23000} />
         </LineChart>
       </ResponsiveContainer>
     </div>

@@ -10,9 +10,19 @@ import {
 } from 'react-router-dom'
 import UserList from "./Pages/UserList/UserList";
 import User from "./Pages/User/User";
+import Footer from "./Components/Footer/Footer";
+import Login from "./Pages/Login/Login";
+import SignUp from "./Pages/SignUp/SignUp";
 
 function App(): JSX.Element {
   return (
+    <>
+    <Router>
+      <Switch>
+      <Route exact path="/signup" component = {SignUp} />
+      <Route exact path="/login" component={Login} />
+        </Switch>
+      </Router>
     <Router>
       <TopBar />
       <div className="container">
@@ -27,9 +37,12 @@ function App(): JSX.Element {
           <Route exact path="/user/:userId">
             <User />
           </Route>
+          
         </Switch>
       </div>
+      <Footer />
     </Router>
+    </>
   );
 }
 

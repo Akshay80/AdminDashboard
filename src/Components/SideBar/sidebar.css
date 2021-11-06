@@ -32,6 +32,8 @@
     display: flex;
     align-items: center;
     border-radius: 3px;
+    color: darkslategray;
+    text-decoration: none;
 }
 
 .sidebarListItem.active , .sidebarListItem:hover{
