@@ -14,7 +14,7 @@ import Analytics from "./Pages/Analytics/Analytics";
 
 function App(): JSX.Element {
   return (
-    <div className="container">
+    <div className="container-fluid">
          <div className="row">
     <Router>
       <TopBar />
