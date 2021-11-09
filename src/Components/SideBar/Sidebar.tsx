@@ -70,7 +70,9 @@ export default function Sidebar() {
             </li>
             <li className="sidebarListItem">
               <ChatBubbleOutline className="sidebarIcon"/>
+              <Link to="/messages">
               Messages
+              </Link>
             </li>
           </ul>
         </div>

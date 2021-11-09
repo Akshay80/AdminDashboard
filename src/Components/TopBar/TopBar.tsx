@@ -16,7 +16,7 @@ export default function TopBar() {
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
-          <div id="google_translate_element"> </div>
+          {/* <div id="google_translate_element"> </div> */}
             <Badge className="menus" badgeContent={2} color="error">
               <NotificationsNone color="action" />
             </Badge>

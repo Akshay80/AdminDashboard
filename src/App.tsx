@@ -13,6 +13,7 @@ import User from "./Pages/User/User";
 import Analytics from "./Pages/Analytics/Analytics";
 import Sales from "./Pages/Sales/Sales";
 import Mails from "./Pages/Mails/Mails";
+import Messages from "./Pages/Messages/Messages";
 
 function App(): JSX.Element {
   return (
@@ -43,6 +44,9 @@ function App(): JSX.Element {
           </Route>
           <Route exact path="/mails">
             <Mails />
+          </Route>
+          <Route exact path="/messages">
+            <Messages />
           </Route>
         </div>
         </Switch>
