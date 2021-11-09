@@ -1,0 +1,25 @@
+.emailbox-card {
+    cursor: pointer;
+    width: 100%;
+    padding: 8px !important;
+}
+
+.emailbox-subject {
+    padding-bottom: 3px !important;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+.emailbox-text {
+    min-height: 250px !important;
+    margin: 20px 16px !important;
+}
+.mail-action-buttons {
+ margin-top: 20px !important;
+    display: flex !important;
+    justify-content: space-around !important;
+}
+.mail-action-button {
+    margin-right: 10px !important;
+}

@@ -1,0 +1,21 @@
+.email-card {
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    width: 100%;
+}
+.email-card:hover {
+    background-color: #d3d1d1;
+    border-left: 2px solid grey;
+}
+.email-heading {
+    font-size: 14px !important;
+    color: #000000;
+    font-weight: 700 !important;
+}
+.email-subject{
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+.email-text {
+    font-size : 11px !important;
+}

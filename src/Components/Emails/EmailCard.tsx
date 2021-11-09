@@ -1,39 +1,35 @@
-import React, { useEffect, useState } from 'react'
-import CardActions from '@mui/material/CardActions';
+import React, {  useState } from 'react'
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { EmailData } from './EmailData';
+import './EmailCard.css';
 
 interface EmailDataType {
 name: 'string'
 subject: 'string'
+text: 'string'
 }
 
 function EmailCard() {
     const [data, setData] = useState<EmailDataType[]>([]);
-    // console.log('data',data);
-  console.log("Data :", EmailData);
-  console.log("Mydata : ",data);
-  
 
     return (
+     
         <React.Fragment>
           {EmailData.map(item => 
-        <CardContent style={{backgroundColor: "#f2f2f2"}}>
-          <Typography component="p">
+         <CardContent className="email-card" >
+          <Typography className="email-heading">
             {item.name}
           </Typography>
-          <Typography color="text.secondary">
+          <Typography className="email-subject" >
           {item.subject}
           </Typography>
-        <CardActions>
-          <Button size="small">View</Button>
-        </CardActions>
+          <Typography className="email-text" color="text.secondary">
+          {item.text}
+          </Typography>
         </CardContent>
         )}
       </React.Fragment>
-    
     )
 }
 
