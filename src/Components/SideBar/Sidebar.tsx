@@ -11,20 +11,22 @@ export default function Sidebar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem active">
-              <Link to="/">
               <LineStyle className="sidebarIcon"/>
+              <Link to="/">
               Home
               </Link>
             </li>
             <li className="sidebarListItem">
-              <Link to="/dashboard/analytics">
               <Timeline className="sidebarIcon" />
+              <Link to="/dashboard/analytics">
               Analytics
               </Link>
             </li>
             <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon"/>
+            <TrendingUp className="sidebarIcon"/>
+            <Link to="/dashboard/sales/ordered-items">
               Sales
+              </Link>
             </li>
           </ul>
         </div>
@@ -34,7 +36,9 @@ export default function Sidebar() {
           <ul className="sidebarList">
             <li className="sidebarListItem active">
               <PersonOutline className="sidebarIcon"/>
+              <Link to="/users">
               Users
+              </Link>
             </li>
             <li className="sidebarListItem">
               <Storefront className="sidebarIcon" />
@@ -56,7 +60,9 @@ export default function Sidebar() {
           <ul className="sidebarList">
             <li className="sidebarListItem active">
               <MailOutline className="sidebarIcon"/>
+              <Link to="/mails">
              Mail
+             </Link>
             </li>
             <li className="sidebarListItem">
               <DynamicFeed className="sidebarIcon" />

@@ -11,6 +11,8 @@ import {
 import UserList from "./Pages/UserList/UserList";
 import User from "./Pages/User/User";
 import Analytics from "./Pages/Analytics/Analytics";
+import Sales from "./Pages/Sales/Sales";
+import Mails from "./Pages/Mails/Mails";
 
 function App(): JSX.Element {
   return (
@@ -33,8 +35,14 @@ function App(): JSX.Element {
           <Route exact path="/dashboard/analytics">
             <Analytics />
           </Route>
+          <Route exact path="/dashboard/sales/ordered-items">
+            <Sales />
+          </Route>
           <Route exact path="/user/:userId">
             <User />
+          </Route>
+          <Route exact path="/mails">
+            <Mails />
           </Route>
         </div>
         </Switch>

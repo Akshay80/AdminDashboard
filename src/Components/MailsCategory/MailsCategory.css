@@ -1,0 +1,49 @@
+.mails-sidebar {
+  margin-top: 30px;
+    height: 100%;
+    background-color: #fbfbff;
+    list-style-type: none;
+    border-radius: 2px;
+  }
+  
+  .mails-sidebarWrapper {
+    padding: 0 20px;
+    color: #555;
+  }
+  
+  .sidebarMenu {
+    margin-bottom: 10px;
+  }
+  
+  .sidebarTitle {
+    font-style: 13px;
+    color: rgb(201, 195, 195);
+  }
+  
+  .sidebarList {
+    list-style-type: none;
+    padding: 5px;
+  }
+  
+  .sidebarListItem {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+  }
+  
+  .sidebarListItem.active,
+  .sidebarListItem:hover {
+    background-color: #e9e9f1;
+  }
+  
+  .sidebarIcon {
+    font-size: 20px !important;
+    margin-right: 10px;
+  }
+  .mails-h2 {
+    font-size: 16px;
+    color: blue;
+    margin-top: 20px;
+}

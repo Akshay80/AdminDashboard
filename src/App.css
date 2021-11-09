@@ -1,0 +1,23 @@
+li a {
+    color : black;
+    text-decoration: none;
+    position: relative;
+}
+li a:hover {
+    color: rgb(65, 137, 231) !important;
+}
+
+li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom:-5px;
+    left: 50%;
+    background: rgb(65, 137, 231);
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+ li a:hover::after {
+    width: 50%;
+}
