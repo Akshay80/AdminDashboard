@@ -13,12 +13,12 @@ function Messages() {
         <Grid  item md={3}>
          <ChatList />
         </Grid>
-        <Grid  item md={6} >
-       {/* <ChatBody /> */}
+        <Grid  item md={9} >
+       <ChatBody />
         </Grid>
-        <Grid  item md={3}>
+        {/* <Grid  item md={3}>
         <ChatProfile />
-        </Grid>
+        </Grid> */}
       </Grid>
       </div>
     )
