@@ -15,6 +15,7 @@ import Sales from "./Pages/Sales/Sales";
 import Mails from "./Pages/Mails/Mails";
 import Messages from "./Pages/Messages/Messages";
 
+
 function App(): JSX.Element {
   return (
     <div className="container-fluid">
@@ -47,7 +48,7 @@ function App(): JSX.Element {
           </Route>
           <Route exact path="/messages">
             <Messages />
-          </Route>
+          </Route> 
         </div>
         </Switch>
    
