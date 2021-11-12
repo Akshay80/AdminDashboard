@@ -1,0 +1,151 @@
+.Trasanction {
+  flex: 4;
+  box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -webkit-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -moz-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.suBtitle {
+  margin-top: 20px;
+}
+.barStack {
+  flex: 2;
+  box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -webkit-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -moz-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.pieChart {
+  flex: 1;
+  box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -webkit-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -moz-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  padding: 20px;
+  border-radius: 10px;
+}
+.chartDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.subTitle {
+  margin-bottom: 10px !important;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold !important;
+}
+
+.PieLegendss {
+  text-align: center !important;
+}
+
+.tableContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainTable {
+  flex: 2;
+  box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -webkit-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -moz-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.expenses {
+  flex: 1;
+  box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -webkit-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  -moz-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tableTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.tableMonth {
+  color: slategray;
+}
+
+.expenseContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.expenseImage
+{
+flex:1
+}
+.expenseText
+{
+    flex:2
+}
+
+.incomeContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.incomeImage
+{
+flex:1
+}
+.incomeText
+{
+    flex:2
+}
+
+.iconDown
+{
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+    border-radius: 30%;
+    padding: 10px;
+    font-size: 56px!important;
+    color: red;
+}
+
+
+.iconUp
+{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    border-radius: 30%;
+    padding: 10px;
+    font-size: 56px!important;
+    color: green;
+}
+
+.cardBrand
+{
+  width: 100%;
+  margin-top: 40px;
+margin-bottom: 40px;
+}

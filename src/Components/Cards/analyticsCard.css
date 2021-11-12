@@ -1,0 +1,58 @@
+.AnalyticsCard
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.AnalyticsCardItems
+{
+    flex:1;
+    margin: 0px 10px;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+-webkit-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+-moz-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+}
+
+.AnalyticsCardTitle{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.AnalyticsContainer{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    }
+
+    .AnalyticsViews{
+        font-size: 32px;
+    }
+
+    .AnalyticsRate
+    {
+        display: flex;
+        align-items: center;
+        margin-left: 20px
+    }
+    .analyticsIcon{
+        font-size: 24px!important;
+        margin-left: 10px;
+        color:lime;
+    }
+    
+    .analyticsIcon.negative {
+        color: red;
+    }
+    
+    .analyticsSub{
+        font-size: 15px;
+        color: gray;
+    }
+
+    .Icons{
+        margin-right: 10px;
+    }

@@ -1,0 +1,20 @@
+.mails-h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.compose-mail {
+padding-left: 15px;
+}
+.inbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-left: 15px !important;
+}
+.emails-grid {
+    padding: 0 !important;
+}
+.inbox {
+    padding-left: 8px !important;
+}

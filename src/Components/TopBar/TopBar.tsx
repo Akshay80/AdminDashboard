@@ -1,7 +1,7 @@
 import React from "react";
 import "./topbar.css";
 import logo from "../../images/logo_transparent.png";
-import user from "../../images/user.jpg"
+import user from "../../images/user.jpg";
 import { Badge, Avatar } from "@mui/material";
 import { NotificationsNone, Settings, Language } from "@mui/icons-material";
 
@@ -14,7 +14,6 @@ export default function TopBar() {
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
-          <div id="google_translate_element"> </div>
             <Badge className="menus" badgeContent={2} color="error">
               <NotificationsNone color="action" />
             </Badge>

@@ -1,0 +1,53 @@
+.container-wrapper {
+    flex: 4;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+    -webkit-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+    -moz-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.analytics-db {
+    display: flex;
+    background: rgb(247, 249, 252);
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.analytics-db .analytics-db-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.analytics-db .analytics-db-heading p{
+    text-align: start !important;
+}
+
+.analytcis-cards {
+    display: flex;
+    flex: 2;
+    margin: 5px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.TrafficTitle
+{
+    margin:20px;
+}
+
+.TrafficTitle h5
+{
+    margin-top: 40px;
+}
+
+.TitleChart 
+{
+    align-items: center;
+    margin: 20px;
+}
+
+.TitleChart h2
+{
+    margin-bottom: 20px;
+}

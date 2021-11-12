@@ -1,0 +1,16 @@
+.FAQ
+{
+    flex: 4;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+    -webkit-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+    -moz-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.FAQTitle
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

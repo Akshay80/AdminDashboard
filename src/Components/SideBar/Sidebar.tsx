@@ -1,6 +1,7 @@
 import React from "react";
 import "./sidebar.css";
-import { LineStyle, TrendingUp, Timeline, PersonOutline, MailOutline, Report, Storefront, AttachMoney, DynamicFeed, BarChart, ChatBubbleOutline, WorkOutline} from "@mui/icons-material";
+import {Link} from 'react-router-dom'
+import { LineStyle, TrendingUp, Timeline, PersonOutline, MailOutline, Storefront, AttachMoney, HelpOutline, ChatBubbleOutline} from "@mui/icons-material";
 
 export default function Sidebar() {
   return (
@@ -9,78 +10,57 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
+            <Link to="/dashboard" className="sidebarListItem active">
               <LineStyle className="sidebarIcon"/>
               Home
-            </li>
-            <li className="sidebarListItem">
+            </Link>
+            <Link to="/analytics" className="sidebarListItem">
               <Timeline className="sidebarIcon" />
               Analytics
-            </li>
-            <li className="sidebarListItem">
+            </Link>
+            <Link to="/dashboard/sales/ordered-items" className="sidebarListItem">
               <TrendingUp className="sidebarIcon"/>
               Sales
-            </li>
+            </Link>
           </ul>
         </div>
 
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
+            <Link to="/users" className="sidebarListItem active">
               <PersonOutline className="sidebarIcon"/>
               Users
-            </li>
-            <li className="sidebarListItem">
+            </Link>
+            <Link to="/products" className="sidebarListItem">
               <Storefront className="sidebarIcon" />
               Products
-            </li>
-            <li className="sidebarListItem">
+            </Link>
+            <Link to="/transactions" className="sidebarListItem">
               <AttachMoney className="sidebarIcon"/>
               Transactions
-            </li>
-            <li className="sidebarListItem">
-              <BarChart className="sidebarIcon"/>
-              Reports
-            </li>
+            </Link>
           </ul>
         </div>
 
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
+            <Link to="/mails" className="sidebarListItem active">
               <MailOutline className="sidebarIcon"/>
              Mail
-            </li>
-            <li className="sidebarListItem">
-              <DynamicFeed className="sidebarIcon" />
-              Feedback
-            </li>
-            <li className="sidebarListItem">
+            </Link>
+            <Link to="/faq" className="sidebarListItem">
+              <HelpOutline className="sidebarIcon" />
+              FAQ
+            </Link>
+            <Link to="/messages" className="sidebarListItem">
               <ChatBubbleOutline className="sidebarIcon"/>
               Messages
-            </li>
+            </Link>
           </ul>
         </div>
 
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Staff</h3>
-          <ul className="sidebarList">
-            <li className="sidebarListItem active">
-              <WorkOutline className="sidebarIcon"/>
-              Manage
-            </li>
-            <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" />
-              Analytics
-            </li>
-            <li className="sidebarListItem">
-              <Report className="sidebarIcon"/>
-              Reports
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   );

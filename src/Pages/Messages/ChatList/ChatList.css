@@ -1,0 +1,12 @@
+.chat-list-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.chat-text {
+    margin-top: 16px;
+}
+.chat-list-card:hover {
+    background-color: #fff !important;
+}
