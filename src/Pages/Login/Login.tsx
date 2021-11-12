@@ -19,8 +19,8 @@ function Copyright(props: any): JSX.Element {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="https://cynoteck.com/">
+        Cynoteck Solutions Pvt. Ltd.
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -61,6 +61,7 @@ export function Login(): JSX.Element {
             password: data.get('password'),
         });
         loginUser();
+        
         setTimeout(() => {
             window.location.href = "/dashboard"
           }, 1000);

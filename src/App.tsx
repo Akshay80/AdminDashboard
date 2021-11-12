@@ -3,11 +3,7 @@ import Sidebar from "./Components/SideBar/Sidebar";
 import TopBar from "./Components/TopBar/TopBar";
 import "./App.css";
 import Home from "./Pages/Home/Home";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import UserList from "./Pages/UserList/UserList";
 import User from "./Pages/User/User";
 import Analytics from "./Pages/Analytics/Analytics";
@@ -15,24 +11,27 @@ import Footer from "./Components/Footer/Footer";
 import Products from "./Pages/Products/Products";
 import Sales from "./Pages/Sales/Sales";
 import Mails from "./Pages/Mails/Mails";
-import Transaction from './Pages/Transaction/Transaction';
+import Transaction from "./Pages/Transaction/Transaction";
 import FAQ from "./Pages/FAQ/FAQ";
-import {Login} from './Pages/Login/Login';
-import SignUp from './Pages/SignUp/Signup';
+import { Login } from "./Pages/Login/Login";
+import SignUp from "./Pages/SignUp/Signup";
 import Messages from "./Pages/Messages/Messages";
 
-function App(): JSX.Element {
-  const token = localStorage.getItem('Token');
 
-  if(!token) {
-    return <Login/>
+function App(): JSX.Element {
+  const token = localStorage.getItem("Token");
+
+  if (!token || token === undefined) {
+    return <Login />
   }
 
-  return (
+
+else return (
+  
     <Router>
       <TopBar />
       <div className="container">
-          <Sidebar />
+        <Sidebar />
         <Switch>
           <Route exact path="/dashboard">
             <Home />
@@ -63,15 +62,16 @@ function App(): JSX.Element {
           </Route>
           <Route exact path="/messages">
             <Messages />
-          </Route> 
+          </Route>
           <Route exact path="/signup">
             <SignUp />
-          </Route> 
+          </Route>
         </Switch>
       </div>
       <Footer />
     </Router>
   );
+
 }
 
 export default App;

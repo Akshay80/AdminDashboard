@@ -14,15 +14,16 @@ import {
   Avatar,
 } from "@mui/material";
 import './signup.css';
+import SSO from "../../Components/SSO/SSO";
 
 
 function Copyright(props: any) {
     return (
       <Typography variant="body2" color="text.secondary" align="center" {...props}>
         {'Copyright © '}
-        <Link color="inherit" href="https://mui.com/">
-          Your Website
-        </Link>{' '}
+        <Link color="inherit" href="https://cynoteck.com/">
+        Cynoteck Solutions Pvt. Ltd.
+      </Link>{' '}
         {new Date().getFullYear()}
         {'.'}
       </Typography>
@@ -110,6 +111,11 @@ function Copyright(props: any) {
                   />
                 </Grid>
               </Grid>
+
+              <SSO />
+
+
+
               <Button
                 type="submit"
                 fullWidth
