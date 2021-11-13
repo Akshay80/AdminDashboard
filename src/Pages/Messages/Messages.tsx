@@ -2,7 +2,7 @@ import { Grid } from '@mui/material'
 import React from 'react'
 import ChatBody from './ChatBody/ChatBody'
 import ChatList from './ChatList/ChatList'
-import ChatProfile from './ChatProfile/ChatProfile'
+// import ChatProfile from './ChatProfile/ChatProfile'
 import './Messages.css'
 
 function Messages() {

@@ -13,6 +13,8 @@
     justify-content: space-between;
     padding: 20px 30px;
     align-items: center;
+    border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 .analytics-db .analytics-db-heading {

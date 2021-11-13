@@ -1,17 +1,10 @@
-import React, {  useState } from 'react'
+import React from 'react'
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { EmailData } from './EmailData';
 import './EmailCard.css';
 
-interface EmailDataType {
-name: 'string'
-subject: 'string'
-text: 'string'
-}
-
-function EmailCard() {
-    const [data, setData] = useState<EmailDataType[]>([]);
+function EmailCard(): JSX.Element {
 
     return (
      

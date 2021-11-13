@@ -63,7 +63,7 @@ export function Login(): JSX.Element {
         loginUser();
         
         setTimeout(() => {
-            window.location.href = "/dashboard"
+            window.location.href = "/"
           }, 1000);
     }
 
@@ -122,17 +122,17 @@ export function Login(): JSX.Element {
                         >
                             Sign In
                         </Button>
-                        <Grid container>
+                        <Grid container textAlign="center">
                             <Grid item xs>
                                 <Link href="#" variant="body2">
                                     Forgot password?
                                 </Link>
                             </Grid>
-                            <Grid item>
+                            {/* <Grid item>
                                 <Link href="/signup" variant="body2">
                                     {"Don't have an account? Sign Up"}
                                 </Link>
-                            </Grid>
+                            </Grid> */}
                         </Grid>
                     </Box>
                 </Box>

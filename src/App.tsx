@@ -14,14 +14,13 @@ import Mails from "./Pages/Mails/Mails";
 import Transaction from "./Pages/Transaction/Transaction";
 import FAQ from "./Pages/FAQ/FAQ";
 import { Login } from "./Pages/Login/Login";
-import SignUp from "./Pages/SignUp/Signup";
 import Messages from "./Pages/Messages/Messages";
 
 
 function App(): JSX.Element {
   const token = localStorage.getItem("Token");
 
-  if (!token || token === undefined) {
+  if (!token || token === 'undefined') {
     return <Login />
   }
 
@@ -33,7 +32,7 @@ else return (
       <div className="container">
         <Sidebar />
         <Switch>
-          <Route exact path="/dashboard">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route exact path="/users">
@@ -62,9 +61,6 @@ else return (
           </Route>
           <Route exact path="/messages">
             <Messages />
-          </Route>
-          <Route exact path="/signup">
-            <SignUp />
           </Route>
         </Switch>
       </div>

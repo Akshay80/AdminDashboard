@@ -4,7 +4,6 @@ import {
   Card,
   CardContent,
   CardMedia,
-  ImageListItem,
   TextField,
   Typography,
 } from "@mui/material";
@@ -13,16 +12,16 @@ import { ChatListUser } from "./ChatListUser";
 import "./ChatList.css";
 import { Box } from "@mui/system";
 
-interface ChatListItemsType {
-  image: "string";
-  name: "string";
-  active: "string";
-  isOnline: "boolean";
-  id: "number";
-}
+// interface ChatListItemsType {
+//   image: "string";
+//   name: "string";
+//   active: "string";
+//   isOnline: "boolean";
+//   id: "number";
+// }
 
 function ChatList() {
-  const [data, setData] = React.useState<ChatListItemsType[]>([]);
+  // const [data, setData] = React.useState<ChatListItemsType[]>([]);
 
   return (
     <div className="chat-list-items">
