@@ -85,6 +85,7 @@ export default function Transaction(): JSX.Element {
           >
             Balance Statistics
           </Typography>
+          <div className="pieChartContainer">
           <PieChart height={200} width={300}>
             <Pie
               data={datas}
@@ -104,6 +105,7 @@ export default function Transaction(): JSX.Element {
               ))}
             </Pie>
           </PieChart>
+          </div>
           <div className="PieLegendss">
             <Typography variant="subtitle2">
               <CircleIcon style={{ color: "#0088FE", fontSize: 10 }} />
